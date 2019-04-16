@@ -16,7 +16,10 @@
 *.iml
 *.ipr
 
-# Target files #
+### Mvn wrapper files ###
+.mvn
+
+### Target files ###
 .target
 **/target/**
 
