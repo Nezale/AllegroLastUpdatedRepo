@@ -16,7 +16,8 @@
 *.iml
 *.ipr
 
-*/target/**
+# Target files #
+*/target/*
 
 # Package Files #
 *.jar
