@@ -12,16 +12,20 @@ import javax.persistence.Entity;
 public class Repo extends ResourceSupport {
 
     private String name;
+    private String url;
+
 
     @JsonCreator
-    public Repo( @JsonProperty("name") String name){
+    public Repo( @JsonProperty("name") String name, @JsonProperty("html_url") String url){
         this.name = name;
+        this.url = url;
     }
 
 
     public String getName() {
         return name;
     }
+    public String getUrl(){return url;}
 
     public void setName(String name) {
         this.name = name;

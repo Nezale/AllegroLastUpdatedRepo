@@ -13,7 +13,7 @@ public class RepoService {
 
     //** **//
 
-    public static List<Repo> getReposFromGithubApi(){
+    public static Repo getLastUpdatedRepo(){
        RestTemplate restTemplate = new RestTemplate();
        ResponseEntity<List<Repo>> response = restTemplate.exchange(
                "https://api.github.com/users/allegro/repos?sort=pushed",
@@ -21,12 +21,8 @@ public class RepoService {
                null,
                new ParameterizedTypeReference<List<Repo>>() {});
        List<Repo> repos = response.getBody();
-       return repos;
+       Repo repo = repos.stream().findFirst().get();
+       return repo;
    }
 
-   //** **//
-
-    public static Repo getLastUpdatedRepoFromGithubApi(List<Repo> repos){
-       return repos.stream().findFirst().get();
-   }
 }
