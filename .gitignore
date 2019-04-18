@@ -16,8 +16,6 @@
 *.iml
 *.ipr
 
-### Mvn wrapper files ###
-.mvn
 
 ### Target files ###
 .target
