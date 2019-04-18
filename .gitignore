@@ -16,6 +16,8 @@
 *.iml
 *.ipr
 
+# Mvn #
+.mvn
 
 ### Target files ###
 .target
