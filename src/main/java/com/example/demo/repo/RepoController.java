@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @RestController
+@CrossOrigin
 public class RepoController {
 
      private RepoService repoService = new RepoService();

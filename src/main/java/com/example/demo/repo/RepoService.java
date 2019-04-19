@@ -13,12 +13,13 @@ import java.util.List;
 public class RepoService {
 
     public Repo getLastUpdatedRepo() {
-       RestTemplate restTemplate = new RestTemplate();
-       ResponseEntity<List<Repo>> response = restTemplate.exchange(
-               "https://api.github.com/users/allegro/repos?sort=pushed",
-               HttpMethod.GET,
-               null,
-               new ParameterizedTypeReference<List<Repo>>() {});
+            RestTemplate restTemplate = new RestTemplate();
+            ResponseEntity<List<Repo>> response = restTemplate.exchange(
+                    "https://api.github.com/users/allegro/repos?sort=pushed",
+                    HttpMethod.GET,
+                    null,
+                    new ParameterizedTypeReference<List<Repo>>() {
+                    });
        return response.getBody().stream().findFirst().get();
    }
 
