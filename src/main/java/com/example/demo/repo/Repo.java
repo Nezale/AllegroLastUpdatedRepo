@@ -19,6 +19,8 @@ public class Repo extends ResourceSupport {
     @JsonDeserialize(using = LocalDateTimeDeserializer.class)
     private LocalDateTime pushed_at;
 
+    public Repo(){}
+
     @JsonCreator
     public Repo(@JsonProperty("name") String name, @JsonProperty("html_url") String html_url,
                 @JsonProperty("pushed_at") LocalDateTime pushed_at){

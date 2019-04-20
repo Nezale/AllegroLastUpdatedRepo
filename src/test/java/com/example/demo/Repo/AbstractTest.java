@@ -1,6 +1,6 @@
 package com.example.demo.Repo;
 
-import com.example.demo.DemoApplication;
+import com.example.demo.AllegroLastUpdatedRepoApp;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -16,7 +16,7 @@ import org.springframework.web.context.WebApplicationContext;
 import java.io.IOException;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = DemoApplication.class)
+@SpringBootTest(classes = AllegroLastUpdatedRepoApp.class)
 @WebAppConfiguration
 public abstract class AbstractTest {
 

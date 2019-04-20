@@ -7,9 +7,8 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-import java.awt.*;
-
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class RepoControllerTest extends AbstractTest {
 
@@ -20,7 +19,7 @@ public class RepoControllerTest extends AbstractTest {
     }
 
     @Test
-    public void getLastUpdatedRepoTest() throws Exception {
+    public void lastUpdatedRepoTest() throws Exception {
         String uri = "/last-updated";
         MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.get(uri)
                 .accept(MediaType.APPLICATION_JSON_VALUE)).andReturn();
