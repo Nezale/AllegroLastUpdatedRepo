@@ -40,7 +40,7 @@ https://allegro-last-updated-repo-app.herokuapp.com/api/v1/last-updated
 
 ### Todo:
 - [ ] Write test for RepoService when throwing ServiceUnavailable exception
-- [ ] Fix badly written "503 error handled" commit (little fuck up :disappointed: )
+- [ ] Fix missclicked "503 error handleld" commit (little fuck up :disappointed: )
 
 
 ### Ideas for next iterations:
