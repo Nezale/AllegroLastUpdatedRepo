@@ -1,6 +1,4 @@
 language: java
-script:
-  - mvn clean
-  - mvn clean
-  - mvn install
-  - mvn test
+install:
+  - mvn -N io.takari:maven:wrapper
+  - ./mvnw install -DskipTests=false -Dmaven.javadoc.skip=true -B -V
