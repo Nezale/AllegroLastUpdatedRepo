@@ -34,7 +34,7 @@ public class RepoServiceTest {
     private RepoService repoService = new RepoService();
 
     @Test
-    public void getLastUpdatedRepoSuccessTest() {
+    public void getLastUpdatedRepoTest() {
 
         Repo repo1 = new Repo("repo1","https://api.github.com/repos/allegro/swiftbox",LocalDateTime.parse("2019-04-17T15:48:18"));
         Repo repo2 = new Repo("repo2","https://api.github.com/repos/allegro/turnilo",LocalDateTime.parse("2019-04-16T11:00:24"));
